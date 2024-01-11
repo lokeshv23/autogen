@@ -104,12 +104,13 @@ const MetaDataView = ({ metadata }: { metadata: any | null }) => {
           <div className="absolute rounded p-2 bg-secondary top-0 ">
             {fileTitle}
           </div>
+          {/* Commenting to avoid big icons 
           <div
             style={{ minHeight: "150px" }}
             className="bg-secondary  h-full w-full rounded  flex items-center justify-center text-primary"
           >
             <Icon icon="python" size={14} />
-          </div>
+          </div>*/}
         </div>
       );
     } else if (is_pdf) {

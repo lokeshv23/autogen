@@ -71,7 +71,6 @@ const RAView = () => {
   }, [session]);
 
   return (
-    <div className="h-full   ">
       <div className="flex h-full   ">
         <div className="  mr-2  rounded">
           <SideBarView />
@@ -81,7 +80,6 @@ const RAView = () => {
           <ChatBox initMessages={messages} />
         </div>
       </div>
-    </div>
   );
 };
 export default RAView;

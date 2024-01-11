@@ -75,7 +75,7 @@ const AgentsWorkflowView = () => {
       </div>
       <div className="text-xs mt-2 mb-2 pb-1  ">
         {" "}
-        Select or create an agent workflow.{" "}
+        Select an agent workflow.{" "}
       </div>
 
       <div className="relative mt-2 ">

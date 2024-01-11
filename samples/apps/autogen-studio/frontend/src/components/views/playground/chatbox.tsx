@@ -52,7 +52,8 @@ const ChatBox = ({
   let pageHeight, chatMaxHeight;
   if (typeof window !== "undefined") {
     pageHeight = window.innerHeight;
-    chatMaxHeight = pageHeight - 350 + "px";
+    console.log("pageHeight", pageHeight);
+    chatMaxHeight = pageHeight - 230 + "px";
   }
 
   const parseMessages = (messages: any) => {
@@ -158,8 +159,7 @@ const ChatBox = ({
             }}
           >
             <ArrowPathIcon
-              role={"button"}
-              title={"Retry"}
+              role={"button"} 
               className="h-4 w-4 mr-1 inline-block"
             />
             Retry
@@ -448,7 +448,7 @@ const ChatBox = ({
                 autoComplete="on"
                 onKeyDown={handleKeyDown}
                 onChange={handleTextChange}
-                placeholder="Write message here..."
+                placeholder="Write message here OR press Up arrow to get previous messages (last 10 only)..."
                 ref={textAreaInputRef}
                 className="flex items-center w-full resize-none text-gray-600 bg-white p-2 ring-2 rounded-sm pl-5 pr-16"
                 style={{ maxHeight: "120px", overflowY: "auto" }}
@@ -478,7 +478,9 @@ const ChatBox = ({
               </div>
             </form>
           </div>{" "}
-          <div>
+
+          {/* removing the prompt buttons for now */}
+          {/*<div>
             <div className="mt-2 text-xs text-secondary">
               Blank slate? Try one of the example prompts below{" "}
             </div>
@@ -489,7 +491,7 @@ const ChatBox = ({
             >
               {promptButtons}
             </div>
-          </div>
+            </div>*/}
           {error && !error.status && (
             <div className="p-2 border rounded mt-4 text-orange-500 text-sm">
               {" "}

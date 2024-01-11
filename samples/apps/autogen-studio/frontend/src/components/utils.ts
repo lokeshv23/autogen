@@ -8,7 +8,8 @@ import {
 } from "./types";
 
 export const getServerUrl = () => {
-  return process.env.GATSBY_API_URL || "/api";
+  //return process.env.GATSBY_API_URL || "/api";
+  return "http://127.0.0.1:8081/api";
 };
 
 export function setCookie(name: string, value: any, days: number) {

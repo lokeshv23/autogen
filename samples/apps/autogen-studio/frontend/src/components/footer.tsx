@@ -17,8 +17,9 @@ const Footer = () => {
           href="https://microsoft.github.io/autogen/"
         >
           {" "}
-          Team.
+          Team 
         </a>
+        <span>  . Augmented by lokeshv23</span>
       </div>
     </div>
   );

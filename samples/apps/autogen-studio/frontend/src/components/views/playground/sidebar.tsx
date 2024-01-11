@@ -5,7 +5,8 @@ import SessionsView from "./sessions";
 import { useConfigStore } from "../../../hooks/store";
 
 const SideBarView = () => {
-  const [isOpen, setIsOpen] = React.useState(true);
+  // Always start with sidebar in closed mode
+  const [isOpen, setIsOpen] = React.useState(false);
   const minWidth = isOpen ? "270px" : "50px";
 
   let windowHeight, sidebarMaxHeight;

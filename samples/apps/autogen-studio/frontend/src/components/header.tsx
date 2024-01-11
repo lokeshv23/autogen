@@ -24,8 +24,8 @@ const Header = ({ meta, link }: any) => {
 
   const links: any[] = [
     { name: "Build", href: "/build" },
-    { name: "Playground", href: "/" },
-    { name: "Gallery", href: "/gallery" },
+    { name: "Chat", href: "/" },
+    //{ name: "Gallery", href: "/gallery" },
     // { name: "Data Explorer", href: "/explorer" },
   ];
 
@@ -128,6 +128,9 @@ const Header = ({ meta, link }: any) => {
               </div>
               {
                 <div className="hidden lg:ml-4 md:flex md:items-center">
+
+                  {/** Add Agent Messages and file display toggle here */} 
+                  <span>Agent Messages Toggle will come here !  </span>
                   <DarkModeToggle />
 
                   {user && (
