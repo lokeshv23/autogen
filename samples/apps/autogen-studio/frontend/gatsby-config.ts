@@ -5,7 +5,9 @@ require("dotenv").config({
 });
 
 const config: GatsbyConfig = {
-  pathPrefix: `${process.env.PREFIX_PATH_VALUE}`,
+  pathPrefix: `/`,
+  //Above line is to enable default path gatbsy build. Please use below line for prefix path build if path of the app is not root.
+  //pathPrefix: `${process.env.PREFIX_PATH_VALUE}`,
   siteMetadata: {
     title: `AutoGen Studio`,
     description: `Build Multi-Agent Apps`,
